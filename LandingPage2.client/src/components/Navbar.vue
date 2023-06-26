@@ -1,8 +1,8 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+  <nav id="nav" class="navbar navbar-expand-md navbar-dark bg-trans px-3">
     <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
       <div class="d-flex flex-column align-items-center">
-        <img alt="logo" src="../assets/img/cw-logo.png" height="45" />
+
       </div>
     </router-link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
@@ -10,24 +10,55 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav me-auto">
+      <ul class="navbar-nav ms-auto">
         <li>
-          <router-link :to="{ name: 'About' }" class="btn text-success lighten-30 selectable text-uppercase">
-            About
-          </router-link>
+          <button @click="goHome()" class="btn btn-light mx-2">Home</button>
+        </li>
+        <li>
+          <button @click="goAbout()" class="btn btn-light mx-2">About</button>
+        </li>
+        <li>
+          <button @click="goSkills()" class="btn btn-light mx-2">Skills</button>
+        </li>
+        <li>
+          <button @click="goPort()" class="btn btn-light mx-2">Portfolio</button>
+        </li>
+        <li>
+          <button @click="goContact()" class="btn btn-light mx-2">Contact</button>
         </li>
       </ul>
       <!-- LOGIN COMPONENT HERE -->
-      <Login />
     </div>
   </nav>
 </template>
 
 <script>
-import Login from './Login.vue';
+import { logger } from '../utils/Logger.js'
+import Login from './Login.vue'
 export default {
   setup() {
-    return {}
+    return {
+
+      goSkills() {
+        let skillElem = document.getElementById("skills")
+        skillElem.scrollIntoView({ block: "center" })
+      },
+      goAbout() {
+        let aboutElem = document.getElementById("abtMe")
+        aboutElem.scrollIntoView({ block: "center" })
+      },
+      goPort() {
+        let portElem = document.getElementById("port")
+        portElem.scrollIntoView({ block: "center" })
+      },
+      goContact() {
+        window.scrollTo(0, 10000)
+      },
+
+      goHome() {
+        window.scrollTo(0, 0)
+      }
+    }
   },
   components: { Login }
 }
@@ -36,6 +67,10 @@ export default {
 <style scoped>
 a:hover {
   text-decoration: none;
+}
+
+.bg-trans {
+  background-color: rgba(69, 66, 132, 0);
 }
 
 .nav-link {
