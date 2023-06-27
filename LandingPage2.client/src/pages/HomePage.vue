@@ -6,12 +6,12 @@
         <h1>Hello, I am William Edwards, a fullstack software developer</h1>
       </div>
     </section>
-    <section id="abtMe" class="row justify-content-center align-items-center my-2">
+    <section id="abtMe" class="row bg-greyish justify-content-center align-items-center my-2">
       <div class="col-md-10 text-center my-3 title">
-        <span v-for="l in abtMe" :id="l?.id" class="color">{{ l?.letter }}</span>
+        <span v-for="l in abtMe" :id="l?.id" class="color titles">{{ l?.letter }}</span>
       </div>
     </section>
-    <section class="row justify-content-around">
+    <section class="row justify-content-around my-5">
       <div class="col-md-5 text-center">
         <img class="my-img"
           src="https://images.unsplash.com/photo-1527100673774-cce25eafaf7f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
@@ -34,12 +34,12 @@
         </p>
       </div>
     </section>
-    <section id="skills" class="row justify-content-center align-items-center my-2">
+    <section id="skills" class="row bg-greyish justify-content-center align-items-center my-2">
       <div class="col-md-10 text-center my-3 title">
-        <span v-for="l in skills" :id="l?.id" class="color">{{ l?.letter }}</span>
+        <span v-for="l in skills" :id="l?.id" class="color titles">{{ l?.letter }}</span>
       </div>
     </section>
-    <section class="row justify-content-center p-2">
+    <section class="row justify-content-center my-5 p-2">
       <div class="col-6 col-md-2 py-2" title="Hyper Text Markup Language">
         <img class="img-fluid" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg"
           alt="">
@@ -86,44 +86,62 @@
           src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" alt="">
       </div>
     </section>
-    <section id="port" class="row justify-content-center">
-      <div class="col-md-10 text-center">
-        <span v-for="l in port" :id="l?.id" class="color">{{ l?.letter }}</span>
+    <section id="port" class="row bg-greyish justify-content-center">
+      <div class="col-md-10 text-center my-3">
+        <span v-for="l in port" :id="l?.id" class="color titles">{{ l?.letter }}</span>
       </div>
+    </section>
+    <section class="row justify-content-center my-5">
       <div class="col-lg-6 my-2">
-        <div @click="flip(100)" class="keepr selectable">
-          <div id="100" class="clear">
-            <h1 class="text-light">Hello</h1>
+        <h1 class="text-center">Keepr</h1>
+        <div @click="flip(100)" class="keepr rounded selectable">
+          <div id="100" class="clear p-3 rounded">
+            <h4 class="text-light">Keepr is a rendition of pinterest that allows users to share their interests through
+              images with features that allow collecting, browsing, and interacting. This application was built using
+              Vue.js, C# with .Net and Dapper, MySql, and Auth0</h4>
           </div>
         </div>
       </div>
       <div class="col-lg-6 my-2">
-        <div @click="flip(101)" class="gameStone selectable">
-          <div id="101" class="clear">
-            <h1 class="text-light">hi</h1>
+        <h1 class="text-center">GameStone</h1>
+        <div @click="flip(101)" class="gameStone rounded selectable">
+          <div id="101" class="clear p-3 rounded">
+            <h4 class="text-white">GameStone is a full-stack application designed to allow users to find and gather with
+              others to play their favorite board games. Me and four other developers built this application with Vue.Js,
+              Express, MongoDB with Mongoose, and Auth0 for identity</h4>
           </div>
         </div>
       </div>
       <div class="col-lg-6 my-2">
-        <div @click="flip(102)" class="tower selectable">
-          <div id="102" class="clear">
-            <h1 class="text-light">hey</h1>
-
+        <h1 class="text-center">Tower</h1>
+        <div @click="flip(102)" class="tower rounded selectable">
+          <div id="102" class="clear p-3 rounded">
+            <h4 class="text-white">Tower is a full-stack application designed to help users organize and attend events
+              with their social circles, built with VueJs, Express, MongoDB with Mongoose, and Auth0 for identity
+              management.</h4>
           </div>
         </div>
       </div>
     </section>
-    <section id="contact" class="row justify-content-center">
-      <div class="col-md-10 text-center">
-        <span v-for="l in contact" :id="l?.id" class="color">{{ l?.letter }}</span>
+    <section id="contact" class="row bg-greyish justify-content-center">
+      <div class="col-md-10 text-center my-3">
+        <span v-for="l in contact" :id="l?.id" class="color titles">{{ l?.letter }}</span>
       </div>
-      <div class="col-10 text-center m-5">
-        <a title="William's Github" href="https://github.com/uwilledw" class="btn btn-light mx-3"><i
-            class="mdi mdi-github fs-3"></i></a>
-        <a title="William's LinkedIn" href="https://www.linkedin.com/in/uwilliamedwards/" class="btn btn-light mx-3"><i
-            class="mdi mdi-linkedin fs-3"></i></a>
-        <a title="William's Gmail" href="williamedwards7717@gmail.com" class="btn btn-light mx-3"><i
-            class="mdi mdi-email fs-3"></i></a>
+    </section>
+    <section class="row justify-content-center">
+      <div class="d-flex justify-content-center col-10 text-center">
+        <div class="my-5 rise">
+          <a title="William's Github" href="https://github.com/uwilledw" class="btn btn-light mx-3 px-3"><i
+              class="mdi mdi-github fs-3"></i></a>
+        </div>
+        <div class="my-5 rise">
+          <a title="William's LinkedIn" href="https://www.linkedin.com/in/uwilliamedwards/"
+            class="btn btn-light mx-3 px-3"><i class="mdi mdi-linkedin fs-3"></i></a>
+        </div>
+        <div class="my-5 rise">
+          <a title="William's Gmail" href="williamedwards7717@gmail.com" class="btn btn-light mx-3 px-3"><i
+              class="mdi mdi-email fs-3"></i></a>
+        </div>
       </div>
     </section>
   </div>
@@ -137,43 +155,59 @@ import { AppState } from '../AppState.js';
 export default {
   setup() {
     let color = null
+    let color2 = null
     function GetColor() {
       let i = Math.floor(Math.random() * AppState.colors.length)
       color = AppState.colors[i]
     }
 
-    let fntSze = null
-
-    function ChangeFont() {
-      fntSze = Math.floor(Math.random() * 20) + 55
+    function GetColor2() {
+      let i = Math.floor(Math.random() * AppState.colors2.length)
+      color2 = AppState.colors2[i]
     }
 
-    let abtMe = AppState.abtMe
 
 
     function flow() {
+      let abtMe = AppState.abtMe
+      let port = AppState.port
       GetColor()
-      ChangeFont()
       abtMe.forEach((letter, i) => {
         setTimeout(() => {
           let lett = document.getElementById(letter.id)
           lett.style.color = color;
-          lett.style.fontSize = fntSze + "px"
-          // logger.log(letter);
-        }, i * 180);
+        }, i * 200);
       });
-      AppState.skills.forEach((letter, i) => {
+      port.forEach((letter, i) => {
         setTimeout(() => {
           let lett = document.getElementById(letter.id)
           lett.style.color = color;
-          lett.style.fontSize = fntSze + "px"
-          // logger.log(letter);
-        }, i * 200);
+        }, i * 190);
       });
     }
+
+    function flow2() {
+      let contact = AppState.contact
+      let skills = AppState.skills
+      GetColor2()
+      contact.forEach((letter, i) => {
+        setTimeout(() => {
+          let lett = document.getElementById(letter.id)
+          lett.style.color = color2;
+        }, i * 200);
+      });
+      skills.forEach((letter, i) => {
+        setTimeout(() => {
+          let lett = document.getElementById(letter.id)
+          lett.style.color = color2;
+        }, i * 190);
+      });
+    }
+
     onMounted(() => {
       setInterval(flow, 5000),
-        setInterval(changeBg, 500)
+        setInterval(flow2, 6000)
+      setInterval(changeBg, 500)
     })
 
 
@@ -190,8 +224,8 @@ export default {
 
 
     return {
-      abtMe,
       color,
+      abtMe: computed(() => AppState.abtMe),
       skills: computed(() => AppState.skills),
       port: computed(() => AppState.port),
       contact: computed(() => AppState.contact),
@@ -199,13 +233,12 @@ export default {
       flip(id) {
         logger.log(id)
         let elem = document.getElementById(`${id}`)
-        this.changeBg()
         if (elem.classList.contains("app-card")) {
-          elem.classList.remove("app-card")
           elem.classList.add("clear")
+          elem.classList.remove("app-card")
         } else {
-          elem.classList.add("app-card")
           elem.classList.remove("clear")
+          elem.classList.add("app-card")
         }
       }
     }
@@ -214,12 +247,17 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.red {
-  color: red;
+.bg-greyish {
+  background-color: rgb(33, 37, 41);
+}
+
+.titles {
+  font-size: 65px;
 }
 
 .color {
   transition: all .2s ease;
+  color: white;
 }
 
 .title {
@@ -227,8 +265,8 @@ export default {
 }
 
 .hero-img {
-  background-image: url(https://images.unsplash.com/photo-1498898733745-c8c6df58e4ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80);
-  height: 60vh;
+  background-image: url("../assets/img/moving background.gif");
+  height: 75vh;
   background-position: center;
   background-size: cover;
 }
@@ -258,7 +296,7 @@ export default {
 
 .keepr {
   width: 100%;
-  height: 40vh;
+  height: 38vh;
   background-size: cover;
   background-position: center;
   background-image: url("https://images.unsplash.com/photo-1687154156757-25b60bb3892d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
@@ -266,34 +304,59 @@ export default {
 
 .gameStone {
   width: 100%;
-  height: 40vh;
+  height: 38vh;
+  margin-top: 5px;
   background-size: cover;
   background-position: center;
-  background-image: url("https://images.unsplash.com/photo-1687154156757-25b60bb3892d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+  background-image: url("../assets/img/GameStoneSS.png");
 }
 
 .tower {
   width: 100%;
-  height: 40vh;
+  height: 38vh;
   background-size: cover;
   background-position: center;
-  background-image: url("https://images.unsplash.com/photo-1687154156757-25b60bb3892d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+  background-image: url("../assets/img/TowerSS.png");
 }
+
 
 .app-card {
   height: 100%;
   /* From https://css.glass */
-  background: rgba(112, 102, 102, 0.51);
+  background: rgba(51, 46, 46, 0.51);
   // border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(1.5px);
-  -webkit-backdrop-filter: blur(1.5px);
-  border: 1px solid rgba(112, 102, 102, 0.2);
+  backdrop-filter: blur(.5px);
+  -webkit-backdrop-filter: blur(1px);
+  border: 1px solid rgba(50, 46, 46, 0.2);
+  // transition: ease .2s;
+  display: flex;
+  align-items: center;
+}
+
+.rise {
+  padding-top: 4px;
+}
+
+.rise:hover {
+  padding: 0px;
+  margin-bottom: 3px;
   transition: ease .2s;
+}
+
+.rise:hover>a {
+  background-color: black;
+  box-shadow: 0 .10rem .25rem 0.15rem rgba(0, 0, 0, 0.36);
+}
+
+.rise:hover>a>i {
+  color: white;
 }
 
 .clear {
   visibility: hidden;
-  transition: ease .2s;
+  // transition: ease .2s;
+  display: flex;
+  align-items: center;
 }
 </style>

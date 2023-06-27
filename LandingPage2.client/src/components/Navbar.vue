@@ -9,22 +9,22 @@
       aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav ms-auto">
+    <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarText">
+      <ul class="navbar-nav">
         <li>
-          <button @click="goHome()" class="btn btn-light mx-2">Home</button>
+          <h5 @click="goHome()" class="mx-2 nav-btn">Top</h5>
         </li>
         <li>
-          <button @click="goAbout()" class="btn btn-light mx-2">About</button>
+          <h5 @click="goAbout()" class="mx-2 nav-btn">About</h5>
         </li>
         <li>
-          <button @click="goSkills()" class="btn btn-light mx-2">Skills</button>
+          <h5 @click="goSkills()" class="mx-2 nav-btn">Skills</h5>
         </li>
         <li>
-          <button @click="goPort()" class="btn btn-light mx-2">Portfolio</button>
+          <h5 @click="goPort()" class="mx-2 nav-btn">Portfolio</h5>
         </li>
         <li>
-          <button @click="goContact()" class="btn btn-light mx-2">Contact</button>
+          <h5 @click="goContact()" class="mx-2 nav-btn">Contact</h5>
         </li>
       </ul>
       <!-- LOGIN COMPONENT HERE -->
@@ -67,6 +67,16 @@ export default {
 <style scoped>
 a:hover {
   text-decoration: none;
+}
+
+.nav-btn {
+  cursor: pointer;
+  color: white;
+}
+
+.nav-btn:hover {
+  color: rgb(108, 249, 254);
+  text-decoration: underline rgb(108, 249, 254);
 }
 
 .bg-trans {
