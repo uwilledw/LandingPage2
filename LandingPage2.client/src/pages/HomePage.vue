@@ -3,7 +3,7 @@
     <section id="hero" class="row hero-img justify-content-center align-items-center">
       <Navbar class="fixed-top" />
       <div class="col-md-6 text-light text-center">
-        <h1>Hello, I am William Edwards, a fullstack software developer</h1>
+        <span v-for="l in heroText" :key="l.id" :id="l.id" class="fs-1 text-dark">{{ l.letter }}</span>
       </div>
     </section>
     <section id="abtMe" class="row bg-greyish justify-content-center align-items-center my-2">
@@ -13,9 +13,7 @@
     </section>
     <section class="row justify-content-around my-5">
       <div class="col-md-5 text-center">
-        <img class="my-img"
-          src="https://images.unsplash.com/photo-1527100673774-cce25eafaf7f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-          alt="">
+        <img class="my-img" src="../assets/img/IMG_6399.jpg" alt="">
       </div>
       <div class="col-md-5">
         <p class="fs-5 py-3"> I am a motivated fullstack software developer with a passion for crafting efficient and
@@ -93,8 +91,11 @@
     </section>
     <section class="row justify-content-center my-5">
       <div class="col-lg-6 my-2">
-        <h1 class="text-center">Keepr</h1>
-        <div @click="flip(100)" class="keepr rounded selectable">
+        <div class="text-center">
+          <a href="https://keeper-uwilledw.onrender.com" title="https://keeper-uwilledw.onrender.com"
+            class="fs-1 text-dark underline">Keepr</a>
+        </div>
+        <div @click="flip(100)" class="keepr rounded selectable border border-dark">
           <div id="100" class="clear p-3 rounded">
             <h4 class="text-light">Keepr is a rendition of pinterest that allows users to share their interests through
               images with features that allow collecting, browsing, and interacting. This application was built using
@@ -103,8 +104,11 @@
         </div>
       </div>
       <div class="col-lg-6 my-2">
-        <h1 class="text-center">GameStone</h1>
-        <div @click="flip(101)" class="gameStone rounded selectable">
+        <div class="text-center">
+          <a href="http://gamestone.onrender.com/" title="http://gamestone.onrender.com/"
+            class="fs-1 text-dark underline">GameStone</a>
+        </div>
+        <div @click="flip(101)" class="gameStone rounded selectable border border-dark">
           <div id="101" class="clear p-3 rounded">
             <h4 class="text-white">GameStone is a full-stack application designed to allow users to find and gather with
               others to play their favorite board games. Me and four other developers built this application with Vue.Js,
@@ -113,8 +117,11 @@
         </div>
       </div>
       <div class="col-lg-6 my-2">
-        <h1 class="text-center">Tower</h1>
-        <div @click="flip(102)" class="tower rounded selectable">
+        <div class="text-center">
+          <a href="https://tower-williamedwards.onrender.com" title="https://tower-williamedwards.onrender.com"
+            class="fs-1 text-dark underline">Tower</a>
+        </div>
+        <div @click="flip(102)" class="tower rounded selectable border border-dark">
           <div id="102" class="clear p-3 rounded">
             <h4 class="text-white">Tower is a full-stack application designed to help users organize and attend events
               with their social circles, built with VueJs, Express, MongoDB with Mongoose, and Auth0 for identity
@@ -166,6 +173,16 @@ export default {
       color2 = AppState.colors2[i]
     }
 
+    function heroTextChange() {
+      let heroText = AppState.heroText
+      heroText.forEach((letter, i) => {
+        setTimeout(() => {
+          let lett = document.getElementById(letter.id)
+          lett.style.color = "#fff";
+        }, i * 200);
+      });
+    }
+
 
 
     function flow() {
@@ -205,9 +222,10 @@ export default {
     }
 
     onMounted(() => {
-      setInterval(flow, 5000),
-        setInterval(flow2, 6000)
+      setInterval(flow, 5000)
+      setInterval(flow2, 6000)
       setInterval(changeBg, 500)
+      heroTextChange()
     })
 
 
@@ -229,9 +247,10 @@ export default {
       skills: computed(() => AppState.skills),
       port: computed(() => AppState.port),
       contact: computed(() => AppState.contact),
+      heroText: computed(() => AppState.heroText),
 
       flip(id) {
-        logger.log(id)
+        // logger.log(id)
         let elem = document.getElementById(`${id}`)
         if (elem.classList.contains("app-card")) {
           elem.classList.add("clear")
@@ -255,6 +274,11 @@ export default {
   font-size: 65px;
 }
 
+.underline:hover {
+  text-decoration: underline #111927;
+
+}
+
 .color {
   transition: all .2s ease;
   color: white;
@@ -275,7 +299,7 @@ export default {
   width: 100%;
   height: 55vh;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
 }
 
 .ease {
@@ -299,7 +323,7 @@ export default {
   height: 38vh;
   background-size: cover;
   background-position: center;
-  background-image: url("https://images.unsplash.com/photo-1687154156757-25b60bb3892d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+  background-image: url("../assets/img/Keepr.png");
 }
 
 .gameStone {
