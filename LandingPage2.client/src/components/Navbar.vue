@@ -9,13 +9,13 @@
       aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarText">
+    <div class="collapse navbar-collapse mobile" id="navbarText">
       <ul class="navbar-nav">
         <li>
           <h5 @click="goHome()" class="mx-2 nav-btn">Top</h5>
         </li>
+        <h5 @click="goAbout()" class="mx-2 nav-btn">About</h5>
         <li>
-          <h5 @click="goAbout()" class="mx-2 nav-btn">About</h5>
         </li>
         <li>
           <h5 @click="goSkills()" class="mx-2 nav-btn">Skills</h5>
@@ -75,7 +75,7 @@ a:hover {
 }
 
 .nav-btn:hover {
-  color: rgb(108, 249, 254);
+  color: #6cf9fe;
   text-decoration: underline rgb(108, 249, 254);
 }
 
@@ -85,6 +85,17 @@ a:hover {
 
 .nav-link {
   text-transform: uppercase;
+}
+
+.mobile {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
 }
 
 .navbar-nav .router-link-exact-active {

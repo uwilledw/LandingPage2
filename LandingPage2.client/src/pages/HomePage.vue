@@ -3,7 +3,7 @@
     <section id="hero" class="row hero-img justify-content-center align-items-center">
       <Navbar class="fixed-top" />
       <div class="col-md-6 text-light text-center">
-        <span v-for="l in heroText" :key="l.id" :id="l.id" class="fs-1 text-dark">{{ l.letter }}</span>
+        <span v-for="l in heroText" :key="l.id" :id="l.id" class="fs-1 text-black">{{ l.letter }}</span>
       </div>
     </section>
     <section id="abtMe" class="row bg-greyish justify-content-center align-items-center my-2">
@@ -20,10 +20,8 @@
           intuitive
           applications. I
           recently completed a rigorous 13-week coding bootcamp, where I gained hands-on experience in modern web
-          development technologies such as HTML, CSS, JavaScript, Vue and more.
-
-          Prior to my coding bootcamp, I was exploring options for a career and I am glad that I came across coding.
-
+          development technologies such as HTML, CSS, JavaScript, Vue and more. Prior to my coding bootcamp, I learned
+          leadership, customer service, and problem solving skills that have helped me through my journey.
           As a software developer, I am always open to learning new skills and technologies, and I am excited about the
           opportunity to continue growing professionally.
           <!-- I am seeking an entry-level software developer position where I
@@ -87,6 +85,13 @@
     <section id="port" class="row bg-greyish justify-content-center">
       <div class="col-md-10 text-center my-3">
         <span v-for="l in port" :id="l?.id" class="color titles">{{ l?.letter }}</span>
+      </div>
+
+    </section>
+    <section class="row justify-content-center mt-5">
+      <div class="col-md-8">
+        <h4>These sites are being hosted using a free service, which may cause them to load slower than usual. I apologize
+          for any inconvenience this may cause, and I appreciate your patience while accessing my content.</h4>
       </div>
     </section>
     <section class="row justify-content-center my-5">
@@ -178,7 +183,8 @@ export default {
       heroText.forEach((letter, i) => {
         setTimeout(() => {
           let lett = document.getElementById(letter.id)
-          lett.style.color = "#fff";
+          lett.classList.remove("text-black");
+          lett.classList.add("text-light")
         }, i * 200);
       });
     }
