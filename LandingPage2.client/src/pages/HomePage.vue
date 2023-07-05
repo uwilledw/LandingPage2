@@ -16,7 +16,8 @@
         <img class="my-img" src="../assets/img/IMG_6399.jpg" alt="">
       </div>
       <div class="col-md-5">
-        <p class="fs-5 py-3"> I am a motivated fullstack software developer with a passion for crafting efficient and
+        <p class="fs-5 mob-p py-3"> I am a motivated fullstack software developer with a passion for crafting efficient
+          and
           intuitive
           applications. I
           recently completed a rigorous 13-week coding bootcamp, where I gained hands-on experience in modern web
@@ -318,6 +319,18 @@ export default {
   transition: ease .4s;
 }
 
+.mob-p {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .mob-p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 // .app-img {
 //   width: 100%;
 //   height: 35vh;
@@ -326,7 +339,7 @@ export default {
 
 .keepr {
   width: 100%;
-  height: 38vh;
+  height: 50vh;
   background-size: cover;
   background-position: center;
   background-image: url("../assets/img/Keepr.png");
@@ -334,8 +347,8 @@ export default {
 
 .gameStone {
   width: 100%;
-  height: 38vh;
-  margin-top: 5px;
+  height: 50vh;
+  // margin-top: 5px;
   background-size: cover;
   background-position: center;
   background-image: url("../assets/img/GameStoneSS.png");
@@ -343,7 +356,7 @@ export default {
 
 .tower {
   width: 100%;
-  height: 38vh;
+  height: 50vh;
   background-size: cover;
   background-position: center;
   background-image: url("../assets/img/TowerSS.png");
