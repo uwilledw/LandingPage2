@@ -72,7 +72,8 @@
       </div>
       <div class="col-6 col-md-2 py-2" title="DotNet">
         <img class="img-fluid"
-          src="https://www.onesixsolutions.com/wp-content/uploads/2019/12/dotnet_round-e1576518490913.png" alt="">
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/180px-Microsoft_.NET_logo.svg.png"
+          alt="">
       </div>
       <div class="col-6 col-md-2 py-2" title="MySQL">
         <img class="img-fluid" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain-wordmark.svg"
