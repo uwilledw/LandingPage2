@@ -41,15 +41,18 @@ export default {
 
       goSkills() {
         let skillElem = document.getElementById("skills")
-        skillElem.scrollIntoView({ block: "center" })
+        let postiton = skillElem.offsetTop
+        window.scrollTo(0, postiton - 60)
       },
       goAbout() {
         let aboutElem = document.getElementById("abtMe")
-        aboutElem.scrollIntoView({ block: "center" })
+        let postiton = aboutElem.offsetTop
+        window.scrollTo(0, postiton - 60)
       },
       goPort() {
         let portElem = document.getElementById("port")
-        portElem.scrollIntoView({ block: "center" })
+        let postiton = portElem.offsetTop
+        window.scrollTo(0, postiton - 60)
       },
       goContact() {
         window.scrollTo(0, 10000)
