@@ -136,6 +136,20 @@
           </div>
         </div>
       </div>
+      <div class="col-lg-6 my-2">
+        <div class="text-center">
+          <a href="https://redbarnleather.onrender.com" title="https://redbarnleather.onrender.com"
+            class="fs-1 text-dark underline">RedBarnLeather</a>
+        </div>
+        <div @click="flip(102)" class="tower rounded selectable border border-dark">
+          <div id="102" class="clear p-3 rounded">
+            <h4 class="text-white">RedBarnLeather is a full-stack application designed to help users organize and attend
+              events
+              with their social circles, built with VueJs, Express, MongoDB with Mongoose, and Auth0 for identity
+              management.</h4>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="contact" class="row bg-greyish justify-content-center">
       <div class="col-md-10 text-center my-3">
