@@ -141,12 +141,11 @@
           <a href="https://redbarnleather.onrender.com" title="https://redbarnleather.onrender.com"
             class="fs-1 text-dark underline">RedBarnLeather</a>
         </div>
-        <div @click="flip(102)" class="tower rounded selectable border border-dark">
-          <div id="102" class="clear p-3 rounded">
-            <h4 class="text-white">RedBarnLeather is a full-stack application designed to help users organize and attend
-              events
-              with their social circles, built with VueJs, Express, MongoDB with Mongoose, and Auth0 for identity
-              management.</h4>
+        <div @click="flip(103)" class="tower rounded selectable border border-dark">
+          <div id="103" class="clear p-3 rounded">
+            <h4 class="text-white">RedBarnLeather is a full-stack application designed to allow users to shop and buy
+              leather products, built with Vue.js, Express, MongoDB with Mongoose, Auth0 for identity
+              management, and PayPal for payments.</h4>
           </div>
         </div>
       </div>
