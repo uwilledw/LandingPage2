@@ -376,6 +376,14 @@ export default {
   background-image: url("../assets/img/TowerSS.png");
 }
 
+.redbarnleather {
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+
+}
+
 
 .app-card {
   height: 100%;
