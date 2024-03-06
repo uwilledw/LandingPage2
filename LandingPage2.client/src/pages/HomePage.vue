@@ -36,7 +36,7 @@
         <span v-for="l in skills" :id="l?.id" class="color titles">{{ l?.letter }}</span>
       </div>
     </section>
-    <section class="row justify-content-center my-5 p-2">
+    <section class="row justify-content-center align-items-center my-5 p-2">
       <div class="col-6 col-md-2 py-2" title="Hyper Text Markup Language">
         <img class="img-fluid" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg"
           alt="">
@@ -141,7 +141,7 @@
           <a href="https://redbarnleather.onrender.com" title="https://redbarnleather.onrender.com"
             class="fs-1 text-dark underline">RedBarnLeather</a>
         </div>
-        <div @click="flip(103)" class="tower rounded selectable border border-dark">
+        <div @click="flip(103)" class="redbarnleather rounded selectable border border-dark">
           <div id="103" class="clear p-3 rounded">
             <h4 class="text-white">RedBarnLeather is a full-stack application designed to allow users to shop and buy
               leather products, built with Vue.js, Express, MongoDB with Mongoose, Auth0 for identity
@@ -318,7 +318,7 @@ export default {
 
 .my-img {
   width: 100%;
-  height: 55vh;
+  height: 60vh;
   object-fit: cover;
   object-position: top;
 }
@@ -381,7 +381,7 @@ export default {
   height: 50vh;
   background-size: cover;
   background-position: center;
-
+  background-image: url("../assets/img/redbarnleather.png");
 }
 
 
