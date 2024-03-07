@@ -7,35 +7,33 @@
       </div>
     </section>
     <section class="fade row" id="abtMe">
-      <div class="col-12">
-        <section class="row bg-greyish justify-content-center align-items-center my-2">
-          <div class="col-md-10 text-center my-3 title">
-            <span v-for="l in abtMe" :id="l?.id" class="color titles">{{ l?.letter }}</span>
-          </div>
-        </section>
-        <section class="row justify-content-around my-5">
-          <div class="col-md-5 text-center">
-            <img class="my-img" src="../assets/img/IMG_6399.jpg" alt="">
-          </div>
-          <div class="col-md-5">
-            <p class="fs-5 mob-p py-3"> I am a motivated fullstack software developer with a passion for crafting
-              efficient
-              and
-              intuitive
-              applications. I
-              recently completed a rigorous 13-week coding bootcamp, where I gained hands-on experience in modern web
-              development technologies such as HTML, CSS, JavaScript, Vue and more. Prior to my coding bootcamp, I learned
-              leadership, customer service, and problem solving skills that have helped me through my journey.
-              As a software developer, I am always open to learning new skills and technologies, and I am excited about
-              the
-              opportunity to continue growing professionally.
-              <!-- I am seeking an entry-level software developer position where I
+      <section class="row bg-greyish justify-content-center align-items-center my-2">
+        <div class="col-md-10 text-center my-3 title">
+          <span v-for="l in abtMe" :id="l?.id" class="color titles">{{ l?.letter }}</span>
+        </div>
+      </section>
+      <section class="row justify-content-around my-5">
+        <div class="col-md-5 text-center">
+          <img class="my-img" src="../assets/img/IMG_6399.jpg" alt="">
+        </div>
+        <div class="col-md-5">
+          <p class="fs-5 mob-p py-3"> I am a motivated fullstack software developer with a passion for crafting
+            efficient
+            and
+            intuitive
+            applications. I
+            recently completed a rigorous 13-week coding bootcamp, where I gained hands-on experience in modern web
+            development technologies such as HTML, CSS, JavaScript, Vue and more. Prior to my coding bootcamp, I learned
+            leadership, customer service, and problem solving skills that have helped me through my journey.
+            As a software developer, I am always open to learning new skills and technologies, and I am excited about
+            the
+            opportunity to continue growing professionally.
+            <!-- I am seeking an entry-level software developer position where I
           can utilize my skills and knowledge to produce innovative applications in a collaborative and dynamic team
           environment. -->
-            </p>
-          </div>
-        </section>
-      </div>
+          </p>
+        </div>
+      </section>
     </section>
     <section id="skills" class="fade">
       <section class="row bg-greyish justify-content-center align-items-center my-2">
