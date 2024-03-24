@@ -55,25 +55,28 @@
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="">
         </div>
         <div class="col-6 col-md-2 py-2" title="Figma">
-          <img class="img-fluid" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="">
+          <img class="img-fluid" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+            alt="">
         </div>
         <div class="col-6 col-md-2 py-2" title="Vue">
           <img class="img-fluid" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-plain-wordmark.svg"
             alt="">
         </div>
         <div class="col-6 col-md-2 py-2" title="JavaScript">
-          <img class="img-fluid" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
-            alt="">
+          <img class="img-fluid"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="">
         </div>
         <div class="col-6 col-md-2 py-2" title="Node.js">
-          <img class="img-fluid" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" alt="">
+          <img class="img-fluid" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg"
+            alt="">
         </div>
         <div class="col-6 col-md-2 py-2" title="Mongo DataBase">
           <img class="img-fluid"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg" alt="">
         </div>
         <div class="col-6 col-md-2 py-2" title="C Sharp">
-          <img class="img-fluid" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg" alt="">
+          <img class="img-fluid" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg"
+            alt="">
         </div>
         <div class="col-6 col-md-2 py-2" title="DotNet">
           <img class="img-fluid"
@@ -111,7 +114,8 @@
           </div>
           <div @click="flip(100)" class="keepr rounded selectable border border-dark">
             <div id="100" class="clear p-3 rounded">
-              <h4 class="text-light">Keepr is a rendition of pinterest that allows users to share their interests through
+              <h4 class="text-light">Keepr is a rendition of pinterest that allows users to share their interests
+                through
                 images with features that allow collecting, browsing, and interacting. This application was built using
                 Vue.js, C# with .Net and Dapper, MySql, and Auth0</h4>
             </div>
@@ -124,7 +128,8 @@
           </div>
           <div @click="flip(101)" class="gameStone rounded selectable border border-dark">
             <div id="101" class="clear p-3 rounded">
-              <h4 class="text-white">GameStone is a full-stack application designed to allow users to find and gather with
+              <h4 class="text-white">GameStone is a full-stack application designed to allow users to find and gather
+                with
                 others to play their favorite board games. Me and four other developers built this application with
                 Vue.Js,
                 Express, MongoDB with Mongoose, and Auth0 for identity</h4>
@@ -152,8 +157,8 @@
           <div @click="flip(103)" class="redbarnleather rounded selectable border border-dark">
             <div id="103" class="clear p-3 rounded">
               <h4 class="text-white">RedBarnLeather is a full-stack application designed to allow users to shop and buy
-                leather products, built with Vue.js, Express, MongoDB with Mongoose, Auth0 for identity
-                management, and PayPal for payments.</h4>
+                leather products. Built with Vue.js, Express, MongoDB with Mongoose, Auth0 for identity
+                management, PayPal for payments, and Nodemailer for Order confirmation emails.</h4>
             </div>
           </div>
         </div>
@@ -470,5 +475,4 @@ export default {
 
 // .fade-in.active {
 //   opacity: 1;
-// }
-</style>
+// }</style>
